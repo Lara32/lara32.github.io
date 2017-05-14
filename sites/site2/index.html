@@ -53,10 +53,10 @@
 							<img src="img/elephants.png" alt="elephant" class="elephant">
 							<h1>Бесплатный видео-курс по РНР <br/> из 5 занятий по 20 минут каждое</h1>
 							</div>
-							<form action="action.php" enctype="multipart/form-data" method="post">
-								<input type="text" name="user_info" placeholder="Имя">
-								<input type="email" name="user_info" placeholder="E-mail">
-								<input type="text" name="user_info" placeholder="Телефон">
+							<form action="" enctype="multipart/form-data" method="post">
+								<input autofocus type="text" name="name"  placeholder="Имя" required  minlength="2">
+								<input type="email" name="email" placeholder="E-mail" required pattern="^\S+@\S+\.\S+$">
+								<input type="tel" name="phone" placeholder="Телефон" required minlength="11">
 								<p>* Нажимая кнопку записаться, вы автоматически соглашаетесь с персональной обработкой ваших данных</p>
 								<input type="submit" value="ПОЛУЧИТЬ ВИДЕОУРОКИ">
 							</form> 
