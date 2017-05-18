@@ -1,68 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<title>Меню</title>
-
-    <meta name="viewport" content="width=device-width">
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/styles_menu.css" rel="stylesheet" type="text/css">
-
-
-
+    <meta charset="UTF-8">
+    <title>Labuten</title>
 </head>
 <body>
-<div class="wrapper">
-<nav>
- <label class="menuToggle" for="menuCheck">Меню</label>
-                <input type="checkbox" class="menu_check" id="menuCheck">
-                <ul class="menu">
-                    <li><a href="#">Главная</a>
-						<ul>
-							<li><a href="#">Подпункт1</a></li>
-							<li><a href="#">Подпункт2</a></li>
-							<li><a href="#">Подпункт3</a></li>
-							<li><a href="#">Подпункт4</a></li>
-						</ul>
-					</li>
-	
-					
-                    <li><a href="#">О компании</a>
-					<ul>
-							<li><a href="#">Подпункт5</a></li>
-							<li><a href="#">Подпункт5</a></li>
-							<li><a href="#">Подпункт7</a></li>
-							<li><a href="#">Подпункт8</a></li>
-						</ul>
-					
-					</li>
-                    <li><a href="#">Продукты</a>
-					<ul>
-							<li><a href="#">Подпункт09</a></li>
-							<li><a href="#">Подпункт10</a></li>
-							<li><a href="#">Подпункт11</a></li>
-							<li><a href="#">Подпункт12</a></li>
-						</ul>
-					</li>
-                    <li><a href="#">Услуги</a><ul>
-							<li><a href="#">Подпункт13</a></li>
-							<li><a href="#">Подпункт14</a></li>
-							<li><a href="#">Подпункт15</a></li>
-							<li><a href="#">Подпункт16</a></li>
-						</ul>
-					</li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>	
+    <header>
+        <div class="social-header">
+            <img class="social-fb social-header__icon-fb" src="images/img_fb_h.png" alt="facebook">
+            <img class="social-vk social-header__icon-vk" src="images/img_vk_h.png" alt="vkontakte">
+            <img class="social-tw social-header__icon-tw" src="images/img_tw_h.png" alt="tweeter">
+        </div>
+        <div class="login-main-page">
+            <img src="images/user.png" alt="user">
+            <span>вход</span>
+            <span>/</span>
+            <span>регистрация</span>
+        </div>
+        <div class="">
+            <div class="logo-main-page">
+                <img src="images/shoes.png" alt="">
+                <div class="logo-text-1">NALABUTEN.AH</div>
+                <div class="logo-text-2">unrealizable dreams</div>
+            </div>
+            <div class="search-main">
+                <input type="text" placeholder="поиск">
+                <button><img src="" alt="search"></button>
+            </div>
+            <div class="basket">
+                <button class="basket__icon">
+                    <img src="images/basket-icon.png" alt="basket">
+                </button>
+                <div class="basket__title">КОРЗИНА
+            </div>
+                <div class="basket__goods--counter">покупок 0</div>
+            </div>
+        </div>
+        <nav class="main-page-navigation">
+            <ul class="main-page-navigation__main-menu">
+                <li><a href="#">КАТАЛОГ</a></li>
+                <li><a href="#">АКЦИИ</a></li>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">БЛОГ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="slider">
+          <button><img src="images/icon_slider1.png" alt="<"></button>
+          <div>
+              <div><img src="" alt="cherry"></div>
+              <div>
+                  <h1>Labuten Cherry</h1>
+                  <h2>Новая весенняя коллекция</h2>
+                  <p>Мы рады представить вам новую коллекцию туфель от знаменитого дизайнера-модельера Кристиана</p>
+              </div>
+              <button>купить сейчас</button>
+          <button><img src="images/icon_slider2.png" alt=">"></button>
+      </div>
+      </section>
+        <section class="sale">
+            <div class="sale-current one">
+                <h2>10% скидка</h2>
+                <p>уникальное предложение недели на всю старую коллекцию объявлена скидка</p>
+                <a href="#">Узнать подробности</a>
+            </div>
+            <div class="sale-current two">
+                <h2>10% скидка</h2>
+                <p>уникальное предложение недели на всю старую коллекцию объявлена скидка</p>
+                <a href="#">Узнать подробности</a>
+            </div>
+            <div class="sale-current three">
+                <h2>10% скидка</h2>
+                <p>уникальное предложение недели на всю старую коллекцию объявлена скидка</p>
+                <a href="#">Узнать подробности</a>
+            </div>
+        </section>
+        <section class="products">
+            <div class="goods-item">
+                <div class="item">
+                    <a href="#"><img class="goods-item__foto" src="images/cherry2.png" alt="cherry2"></a>
+                    <h2 class="goods-item__name">labuten cherry</h2>
+                    <span class="goods-item__desription-goods">Супер-ультрамодная модель <i>носить не сносить</i></span>
+                    <data class="goods-item__prise" value="$7000"></data>
+                </div>
+            </div>
+            <button><img class="goods-item__btn-basket--active"src="images/basket-icon.png" alt="basket"></button>
+            <button class="goods-item__btn-info--active">i</button>
 
+        </section>
+    </main>
+<footer>
+    <nav class="nav-footer">
+        <ul class="footer-menu">
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
 
+        <ul class="footer-menu-links">
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+        </ul>
+        <ul class="footer-catalog-links">
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+        </ul>
+        <ul class="footer-blog-links">
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+            <li><a href="#">какая-то ссылка</a></li>
+        </ul>
 
-
-</div>
-
-
-
-
-
-
+    <div class="social-footer">
+        <img class="social-fb social-footer__icon-fb" src="images/img_fb_f.png" alt="facebook">
+        <img class="social-vk social-footer__icon-vk" src="images/img_vk_f.png" alt="vkontakte">
+        <img class="social-tw social-footer__icon-tw" src="images/img_tw_f.png" alt="tweeter">
+    </div>
+    <div class="phone-one">+7(915)458-75-65</div>
+    <div class="phone-two">+7(915)458-75-65</div>
+    <div class="site-link"><a href="">nalabuten.ah 20016</a></div>
+</footer>
 </body>
 </html>
