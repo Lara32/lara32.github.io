@@ -1,0 +1,173 @@
+@font-face{
+	font-family: OpenSans-Light.ttf;
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+
+
+* {box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+	font-family: 'OpenSans-Light', sans-serif;
+	font-size: 13px; 
+	
+	
+   }
+
+section {
+	background: url(../svg/back_.svg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+h1{
+	font-size : 34px;
+	line-height : 24px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	
+}
+.nav{
+	display: flex;
+	justify-content:  space-between;
+}
+
+
+.button-map {
+	cursor: pointer;
+	width: 300px;
+	text-align: center;
+	position: relative;
+}
+.button-map::before{
+	content: "";
+	background: #9EB1CF;
+	width:100%;
+	height: 4px;
+    position: absolute;
+	z-index: 5;
+    left: 0;
+	top: 130%;
+} 
+.button-map a{
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+}
+.button-map a:hover {
+	color: #E05B67;
+}
+.button-map:hover::before {
+	
+	background: #E05B67;
+}
+
+.blocks_tab{
+	display: flex;
+	flex-direction: row-reverse;
+    align-items: top;
+    align-content: start;
+
+}
+.wrapper-items {
+	margin-top: 30px;
+	width: 321px;
+
+}
+.wrapper-item-factory {
+	width: 311px;
+	border-radius: 15px;
+	background: #fff;
+	margin-bottom: 20px;
+	display: none;
+	
+}
+
+.wrapper-item-factory img {
+	width: 170px;
+	float: left;
+	overflow: hidden;
+	border-radius: 15px 0  0 15px;
+}
+
+
+.title-country {
+	background-color: #4c6c9c;
+	float: left;
+	overflow: hidden;
+	color: white;
+	margin-left: -64px;
+	padding: 0 30px 0 10px;
+	width: 98px;
+	line-height: 27px;
+	border-radius:  0 15px 0  0;
+}
+.flags {
+	
+	height: 27px;
+	margin-left: -64px;
+	
+}
+
+.title-place {
+	font-weight: bold;
+    padding-top: 20%;
+    margin-left: 195px;
+    text-align: left;
+}
+
+#map-eur{
+	width: 600px;
+	transform: scale(0.95);
+	margin-left: 30px;
+	margin-bottom: 50px;
+	
+}
+#map-usa, #map-oz {
+	height: 700px;
+	width: 600px;
+	margin-left: 30px;
+}
+#map-oz {
+	transform: scale(0.95);
+}
+/* классы svg */
+.a {
+	fill:#969696;
+	}
+.b {
+	fill:#cacac9;
+	}
+					
+/* синяя заливка */				
+.c {
+	fill:#4c6c9c;
+	}	
+	
+/* розовая заливка */			
+.c:hover, #hov:hover {
+	cursor: pointer;
+	fill:#da84b7;
+	transition: .3s ease-in-out;
+	}	
+
+.e, .e_ {
+	font-size:8.2px;
+	}
+.e,.g {
+	fill:#fff;
+	}
+.f {
+	fill:#dfe5ef;
+	}
