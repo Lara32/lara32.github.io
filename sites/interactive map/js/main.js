@@ -9,7 +9,7 @@ $(function(){
 
 
 $('.c').click(function() { 
-	$('.wrapper-items').html($(this).attr('block2-data'));
+	$('.wrapper-items').html($(this).attr('data-block2'));
 		$('.wrapper-item-factory').fadeIn();
 	});
 
