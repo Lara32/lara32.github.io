@@ -50,6 +50,9 @@ h1{
 	text-align: center;
 	position: relative;
 }
+.button-map:focus, .button-map a:focus {
+	outline: none;
+}
 .button-map::before{
 	content: "";
 	background: #9EB1CF;
