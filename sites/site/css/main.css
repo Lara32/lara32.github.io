@@ -717,7 +717,7 @@ footer {
 /* Media Queries */
 
 
-@media screen and (max-width: 47em) {
+/*@media screen and (max-width: 47em) {
 	
 	.main--scrolling, .content_scroll {
 		font-size: 70%;
@@ -746,4 +746,4 @@ footer {
 	button.trigger_scroll::before {
 		display: none;
 	}
-}
+}*/
