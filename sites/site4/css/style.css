@@ -1,0 +1,187 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+a  {
+	color: inherit;
+	outline: none;
+	}
+	
+.h3,.h5{
+
+	font-weight: 900;
+}
+.main {
+	position: relative;
+	z-index: 5;
+}
+
+.logo{
+	height: 23%;
+	background-color: #0f504a;
+	position: relative;
+	font-size: 3rem;
+	font-weight: 900;
+	color: #fff;
+	padding-left: 2rem;
+	padding-top: 1rem;
+	line-height: 1.2;
+	margin-bottom: 40%;
+	z-index: 2;
+
+}
+
+.logo::after{
+	content:'';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 100px solid #0f504a; 
+	border-right: 25vw solid transparent;		
+	top: 99.9%;
+	left: 0;
+}
+
+.headerNav {
+	height: 100vh;
+	position: fixed;
+	bottom: 0;
+	z-index: 3;
+}
+.navbar-nav{
+	max-width: 24.9%;
+	border-right: 1px solid rgba(26, 97, 90, .4);
+}
+
+.headerNav ul li{
+	font-size: 18px;
+	padding-top: 3%;
+	padding-bottom: 4%;
+		
+}
+.headerNav ul li:last-child{
+	color: #fff;
+	margin-top: 5vh;
+	margin-bottom: 0;	
+	background-color: #000;
+	font-weight: 900;
+	font-size: 24px;
+	padding: 18px;
+}
+.nav-link{
+	
+}
+.mainImg{
+	background: url('../img/kuala-lumpur-1820944_1920.jpg') no-repeat center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	color: #fff;
+	height: 100%;
+	
+}
+.mainH1{
+	height: 50%;
+	font-weight: 100;
+	font-size: 3rem;
+	
+}
+.mainSubtitle{
+	font-weight: 100;
+}
+
+
+
+.btn-primary {
+	-webkit-border-radius: 1.25em;
+	   -moz-border-radius: 1.25em;
+	        border-radius: 1.25em;
+	font-weight: 300;
+}
+.btnRegForm{
+	font-size: 1.3rem;
+	
+}
+
+.small {
+	font-weight: 300;
+}
+
+.mainBottom-row {
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+.mainBottom-right {
+	font-size: 24px;
+	
+	
+}
+
+.mainFigure {
+	font-size: 18px;
+	margin: 0;
+	padding-bottom: 0;
+
+}
+
+.mainFigure .btn{
+	font-size: 1px;
+}
+.card-title {
+	text-align: left;
+	padding-top: 1rem;
+}
+.card-text {
+	font-size: 14px;
+	color: #1a615a;
+	position: relative;
+	max-width: 150px;
+}
+.card-text::before {
+	content:'';
+	position: absolute;
+	z-index: 5;
+	border: 1.5px solid #1a615a;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	width: 30px;
+	top: -15px;
+	left: 0;
+
+}
+
+@media screen and (max-width: 767px) {
+	
+	.navbar-nav {
+		max-width: 50%;
+	}
+	.logo {
+		height: 37vw!important;
+		font-size: 8vw;
+	}
+	.logo::after{
+		display: none;
+	}
+	.headerNav ul li {
+		font-size: 16px;
+	}
+	.mainImg {
+		height: 100vh;
+	}
+	.mainH1 {
+		font-size: 9vw;
+		height: 45%;
+	}
+	.mainSubtitle {
+		font-size: 7vw;
+		height: 20%;
+	}
+	
+	
+}
+
+
