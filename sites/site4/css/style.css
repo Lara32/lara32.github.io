@@ -168,6 +168,7 @@ a  {
 	}
 	.headerNav ul li {
 		font-size: 16px;
+		padding-left: 5px;
 	}
 	.mainImg {
 		height: 100vh;
