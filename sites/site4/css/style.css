@@ -159,6 +159,9 @@ a  {
 	.navbar-nav {
 		max-width: 50%;
 	}
+	.navbar-nav .nav-link {
+		padding-left: 15px;
+	}
 	.logo {
 		height: 37vw!important;
 		font-size: 8vw;
